@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Moritz Schwind – Portfolio</title> 
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+     
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+
+    <header class="header"> 
+        <div class="container"> 
+            <nav class="main-nav"> 
+                <a href="#home" class="nav-brand">Moritz Schwind</a> 
+                <ul class="nav-menu"> 
+                    <li><a href="#about">About me</a></li> 
+                    <li><a href="#projects">Projects</a></li> 
+                    <li><a href="#hobbies">Hobbies</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul> 
+                <button class="hamburger" id="hamburger-menu"> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                </button> 
+            </nav> 
+        </div> 
+    </header> 
+
+    <main> 
+        <section id="home" class="hero-section"> 
+            <div class="container"> 
+                <h1>Hello, my name is Moritz.</h1> 
+                <p class="subtitle">Welcome to my website. I'm glad you're here!</p> 
+            </div> 
+        </section> 
+
+        <section id="about" class="content-section"> 
+            <div class="container"> 
+                <h2>About me</h2> 
+                <div class="about-content"> 
+                    <img src="https://via.placeholder.com/150" alt="Profilbild von Moritz Schwind" class="profile-pic"> 
+                    <p> 
+                        I'm 13 years old and I am into tech, music, and passionate about learning new things. 
+                        From an early age, I started exploring programming and learning to code. 
+                        My aim is to keep improving my skills and work on new projects. 
+                    </p> 
+                </div> 
+            </div> 
+        </section> 
+
+        <section id="projects" class="content-section bg-light"> 
+            <div class="container"> 
+                <h2>Projects</h2> 
+                <div class="card-grid"> 
+                    <article class="card"> 
+                        <h3>Placeholder1</h3> 
+                        <p>Theres nothing to see yet!</p> 
+                    </article> 
+                    <article class="card"> 
+                        <h3>Placeholder2</h3> 
+                        <p>Theres nothing to see yet!</p> 
+                    </article> 
+                    <article class="card"> 
+                        <h3>Placeholder3</h3> 
+                        <p>Theres nothing to see yet!</p> 
+                    </article> 
+                </div> 
+            </div> 
+        </section> 
+
+        <section id="hobbies" class="content-section"> 
+            <div class="container"> 
+                <h2>Hobbies</h2> 
+                <div class="card-grid"> 
+                    <div class="card hobby-card"> 
+                        <img src="pics/coding1.png" alt="Coding Icon" class="hobby-icon">
+                        <h3>Coding</h3> 
+                    </div> 
+                    <div class="card hobby-card"> 
+                        <img src="pics/gaming1.png" alt="Gaming Icon" class="hobby-icon">
+                        <h3>Gaming</h3> 
+                    </div> 
+                    <div class="card hobby-card"> 
+                        <img src="pics/football1.png" alt="Football Icon" class="hobby-icon">
+                        <h3>Football</h3> 
+                    </div> 
+                </div> 
+            </div> 
+        </section> 
+
+        <section id="contact" class="content-section bg-light"> 
+            <div class="container"> 
+                <h2>Contact</h2> 
+                <p>If you have a question or just want to say "Hello", feel free to drop me a message. (this doesnt work yet.) </p> 
+                <form id="contact-form" class="contact-form"> 
+                    <div class="form-group"> 
+                        <label for="name">Name</label> 
+                        <input type="text" id="name" name="name" required> 
+                    </div> 
+                    <div class="form-group"> 
+                        <label for="email">E-Mail</label> 
+                        <input type="email" id="email" name="email" required> 
+                    </div> 
+                    <div class="form-group"> 
+                        <label for="message">Message</label> 
+                        <textarea id="message" name="message" rows="5" required></textarea> 
+                    </div> 
+                    <button type="submit" class="btn">Submit</button> 
+                </form> 
+                <p id="form-message" class="form-success-message"></p> 
+                <div class="contact-alternative"> 
+                    <p>Or directly send an E-Mail to: <a href="mailto:moritzjschwind@icloud.com">moritzjschwind@icloud.com</a></p> 
+                </div> 
+            </div> 
+        </section> 
+    </main> 
+
+    <footer class="footer"> 
+        <div class="container"> 
+            <p>&copy; 2025 Moritz Schwind</p> 
+        </div> 
+    </footer> 
+     
+    <script src="script.js"></script> 
+</body> 
+</html>
